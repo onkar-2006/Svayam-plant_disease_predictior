@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+}
+
+header {
+    background-color: #004d40; /* Darker shade for better contrast */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #b2dfdb; /* Lighter hover color for visibility */
+}
+
+footer {
+    background-color: #004d40; /* Matching footer color */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    padding: 20px;
+}
+
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 15px 25px;
+    cursor: pointer;
+    background-color: #00796b; /* Consistent primary color */
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s; /* Added transform for button effect */
+}
+
+.custom-file-upload:hover {
+    background-color: #005b4f; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px 25px;
+    border: none;
+    background-color: #1976d2; /* Primary button color */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.2s; /* Added transform for button effect */
+}
+
+button:hover {
+    background-color: #115293; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+.result {
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+    border: 1px solid #004d40; /* Added border for result visibility */
+    padding: 15px; /* Added padding for better spacing */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #ffffff; /* Background for contrast */
+}
+
+/* Styles for the image gallery */
+.image-gallery {
+    display: flex;
+    gap: 10px; /* Space between images */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.image-gallery img {
+    max-width: 100%; /* Ensure images scale down */
+    height: auto; /* Maintain aspect ratio */
+    width: 150px; /* Set a specific width for images */
+    transition: transform 0.2s ease; /* Smooth transition for scaling */
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1); /* Slightly increase size on hover (10% larger) */
+}

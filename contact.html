@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Plant Disease Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+        }
+        header {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #b2dfdb;
+        }
+        main.container {
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        h2 {
+            color: #00796b;
+            margin-top: 30px;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #00796b;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #1976d2;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #115293;
+        }
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact-info {
+            margin-top: 30px;
+            padding: 15px;
+            border: 1px solid #00796b;
+            border-radius: 5px;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="help.html">Help</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <h2>Get in Touch</h2>
+        <p>We'd love to hear from you! If you have any questions, feedback, or concerns, please fill out the form below.</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <h3>Alternative Contact Methods</h3>
+            <p>If you prefer, you can also reach us via:</p>
+            <p><strong>Email:</strong> support@plantdiseasepredictor.com</p>
+            <p><strong>Phone:</strong> +1 (555) 012-3456</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Plant Disease Predictor. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

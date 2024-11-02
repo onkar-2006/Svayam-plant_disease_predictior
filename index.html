@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svayam - The Plant Desiase Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles for chatbot positioning */
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .main-content {
+            flex: 1;
+            padding-right: 20px; /* Space between content and chatbot */
+        }
+        .landbot-chat {
+            width: 300px; /* Width of the chatbot */
+            height: 500px; /* Height of the chatbot */
+            position: relative; /* Relative positioning for proper placement */
+        }
+        .landbot-chat iframe {
+            border: none;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Svayam - The Plant Desiase Predictor</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="help.html">Help</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <div class="main-content">
+
+
+            <div class="upload-container">
+                <label for="file-upload" class="custom-file-upload">
+                    <input type="file" id="file-upload" accept="image/*" required>
+                    Choose an image
+                </label>
+                <button id="predict-button">Predict Disease</button>
+            </div>
+
+            <section class="unique-image-section">
+                <h2>How It Works</h2>
+                <div class="image-gallery">
+                    <img src="farm_img.jpg" alt="Disease 1">
+                    <img src="image_ghr.avif" alt="Disease 2">
+                    <img src="Farm_image_22.webp" alt="Disease 3">
+                </div>
+            </section>
+
+            <div id="result" class="result"></div>
+        </div>
+
+        <!-- Landbot Chatbot Integration -->
+        <div class="landbot-chat">
+            <iframe
+              src="https://landbot.online/v3/H-2665737-X5AAERG3447MN45P/index.html"
+              title="Landbot Chatbot"
+            ></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Plant Disease Predictor. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
