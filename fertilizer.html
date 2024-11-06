@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertilizers for Plant Disease Prevention</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        .fertilizer-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .fertilizer-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: calc(33.33% - 40px);
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .fertilizer-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .fertilizer-item h3 {
+            color: #4CAF50;
+        }
+        .fertilizer-item p {
+            color: #555;
+        }
+        .buy-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .buy-button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fertilizers to Protect Your Plants</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="help.html">Help</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Recommended Fertilizers for Disease Prevention</h2>
+        <p>Our fertilizers are designed to strengthen your plants and protect them from harmful diseases. Browse our selection of high-quality fertilizers below:</p>
+        
+        <div class="fertilizer-container">
+            <!-- Fertilizer 1 -->
+            <div class="fertilizer-item">
+                <img src="fertilizer1.jpg" alt="Fertilizer 1">
+                <h3>Plant Shield Fertilizer</h3>
+                <p>Protect your plants from various fungal and bacterial diseases with this all-natural fertilizer.</p>
+                <button class="buy-button" onclick="window.location.href='https://buyfertilizer.com/plant-shield'">Buy Now</button>
+            </div>
+            
+            <!-- Fertilizer 2 -->
+            <div class="fertilizer-item">
+                <img src="fertilizer2.jpg" alt="Fertilizer 2">
+                <h3>Growth Booster Fertilizer</h3>
+                <p>Boost your plants' immunity and accelerate growth with our nutrient-rich formula.</p>
+                <button class="buy-button" onclick="window.location.href='https://buyfertilizer.com/growth-booster'">Buy Now</button>
+            </div>
+            
+            <!-- Fertilizer 3 -->
+            <div class="fertilizer-item">
+                <img src="fertilizer3.jpg" alt="Fertilizer 3">
+                <h3>Organic Disease Defender</h3>
+                <p>Certified organic fertilizer that prevents plant diseases and promotes healthy growth.</p>
+                <button class="buy-button" onclick="window.location.href='https://buyfertilizer.com/organic-defender'">Buy Now</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Plant Disease Predictor. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
